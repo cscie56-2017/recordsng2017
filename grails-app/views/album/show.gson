@@ -1,0 +1,7 @@
+import cscie56.section3.Album
+
+model {
+	Album album
+}
+
+json tmpl.album(album)

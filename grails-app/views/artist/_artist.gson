@@ -1,0 +1,13 @@
+import cscie56.section3.Artist
+
+model {
+	Artist artist
+}
+
+json {
+	id artist.id
+	firstName artist.firstName
+	lastName artist.lastName
+	countryOfOrigin artist.countryOfOrigin
+	albums g.render(template: "/album/albumSimple", collection: artist?.albums ?: [], var: 'album')
+}

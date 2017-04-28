@@ -1,0 +1,8 @@
+import cscie56.section3.Artist
+
+model {
+	Iterable<Artist> artistList
+}
+
+json tmpl.artist(artistList ?: [])
+

@@ -11,12 +11,18 @@ import { AppComponent } from './app.component';
 import { rootRouterConfig } from './app.routes';
 import { NavComponent } from './nav/nav.component';
 import { NavService } from './nav/nav.service';
+import { ArtistComponent } from './artist/artist.component';
+import { ArtistsComponent } from './artist/artists.component';
+import { AlbumComponent } from './album/album.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    IndexComponent
+    IndexComponent,
+    ArtistComponent,
+    ArtistsComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,

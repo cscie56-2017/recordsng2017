@@ -1,0 +1,11 @@
+import cscie56.section3.Album
+
+model {
+	Album album
+}
+
+json {
+	id album.id
+	title album.title
+	releaseYear album.releaseYear
+}

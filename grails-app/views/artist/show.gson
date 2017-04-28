@@ -1,0 +1,7 @@
+import cscie56.section3.Artist
+
+model {
+	Artist artist
+}
+
+json tmpl.artist(artist)

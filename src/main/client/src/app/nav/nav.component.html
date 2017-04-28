@@ -9,6 +9,12 @@
   </a>
   <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar2" [ngbCollapse]="!navExpanded">
     <ul class="nav navbar-nav float-sm-right">
+        <li *ngFor="let c of controllers">
+          <div [ngSwitch]="hasRoute(c.logicalPropertyName)">
+            <a *ngSwitchCase="true" [routerLink]="'/' + c.logicalPropertyName">{{c.name}}</a>
+            <a *ngSwitchCase="false" [href]="'/' + c.logicalPropertyName">{{c.name}}</a>
+          </div>
+        </li>
       <li class="nav-item" ngbDropdown>
         <a href="#" class="dropdown-toggle nav-link" ngbDropdownToggle role="button" aria-haspopup="true" aria-expanded="false">Application Status <span class="caret"></span></a>
         <div class="dropdown-menu">

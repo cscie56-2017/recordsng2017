@@ -1,0 +1,14 @@
+import cscie56.section3.Album
+
+model {
+	Album album
+}
+
+json {
+	id album.id
+	title album.title
+	lengthInMinutes album.lengthInMinutes
+	genre album.genre
+	releaseYear album.releaseYear
+	artist g.render(template:'/artist/artistSimple', model:[artist:album.artist])
+}

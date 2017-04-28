@@ -1,0 +1,11 @@
+import cscie56.section3.Artist
+
+model {
+	Artist artist
+}
+
+json {
+	id artist.id
+	firstName artist.firstName
+	lastName artist.lastName
+}
